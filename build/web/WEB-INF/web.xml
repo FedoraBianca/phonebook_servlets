@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>SearchS</servlet-name>
+        <servlet-class>SearchS</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddS</servlet-name>
+        <servlet-class>AddS</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteS</servlet-name>
+        <servlet-class>DeleteS</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditS</servlet-name>
+        <servlet-class>EditS</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchS</servlet-name>
+        <url-pattern>/SearchS</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddS</servlet-name>
+        <url-pattern>/AddS</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteS</servlet-name>
+        <url-pattern>/DeleteS</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditS</servlet-name>
+        <url-pattern>/EditS</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
